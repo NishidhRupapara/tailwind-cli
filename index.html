@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./output.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animal Haven | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-3xl">
-    <h1 class="text-center text-blue-500">Hello, Tailwind CSS!</h1>
+<body class="bg-slate-950 text-slate-100 font-sans">
+
+  <!-- ================= HEADER ================= -->
+  <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-xl font-bold tracking-wide text-emerald-400">🐾 Animal Haven</h1>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a class="hover:text-emerald-400" href="#">Home</a>
+        <a class="hover:text-emerald-400" href="#">Animals</a>
+        <a class="hover:text-emerald-400" href="#">Adoption</a>
+        <a class="hover:text-emerald-400" href="#">Gallery</a>
+        <a class="hover:text-emerald-400" href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="max-w-7xl mx-auto px-6 py-28 text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Caring for Animals & Nature</h2>
+    <p class="max-w-2xl mx-auto text-slate-300 text-lg">
+      A professional platform dedicated to animal rescue, wildlife protection, and ethical adoption.
+    </p>
+    <div class="mt-10 flex justify-center gap-4">
+      <button class="px-6 py-3 rounded-lg bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-600">Explore</button>
+      <button class="px-6 py-3 rounded-lg border border-slate-700 hover:border-emerald-500">Adopt Now</button>
+    </div>
+  </section>
+
+  <!-- ================= CATEGORIES ================= -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h3 class="text-2xl font-bold text-center mb-14">Animal Categories</h3>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <!-- Vertical Card -->
+      <div class="relative h-72 rounded-xl overflow-hidden border border-slate-800 group">
+        <img src="https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2lsZCUyMGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div class="absolute bottom-0 p-4">
+          <h4 class="font-semibold text-sm">Wild Animals</h4>
+          <p class="text-xs text-slate-300">Lions, tigers & forests</p>
+        </div>
+      </div>
+
+      <div class="relative h-72 rounded-xl overflow-hidden border border-slate-800 group">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDpO_DyuJq27M_m11Tajtu78ra75QlnBOk8Q&s" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div class="absolute bottom-0 p-4">
+          <h4 class="font-semibold text-sm">Birds</h4>
+          <p class="text-xs text-slate-300">Sky & nature species</p>
+        </div>
+      </div>
+
+      <div class="relative h-72 rounded-xl overflow-hidden border border-slate-800 group">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div class="absolute bottom-0 p-4">
+          <h4 class="font-semibold text-sm">Pets</h4>
+          <p class="text-xs text-slate-300">Dogs & cats</p>
+        </div>
+      </div>
+
+      <div class="relative h-72 rounded-xl overflow-hidden border border-slate-800 group">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div class="absolute bottom-0 p-4">
+          <h4 class="font-semibold text-sm">Rescue</h4>
+          <p class="text-xs text-slate-300">Saved & protected</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= MISSION ================= -->
+  <section class="bg-slate-900/50 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" class="rounded-xl shadow-lg" />
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+        <p class="text-slate-300 leading-relaxed">
+          We focus on sustainable conservation, professional rescue operations, and responsible adoption programs to protect animals and ecosystems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h3 class="text-2xl font-bold text-center mb-14">What We Do</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+        <h4 class="font-semibold mb-2">Animal Rescue</h4>
+        <p class="text-sm text-slate-400">Emergency rescue for injured, abused, and abandoned animals.</p>
+      </div>
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+        <h4 class="font-semibold mb-2">Medical Care</h4>
+        <p class="text-sm text-slate-400">Veterinary treatment, vaccination, and rehabilitation.</p>
+      </div>
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+        <h4 class="font-semibold mb-2">Education & Awareness</h4>
+        <p class="text-sm text-slate-400">Programs to educate communities about animal welfare.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+        <h4 class="text-2xl font-bold text-emerald-400">1200+</h4>
+        <p class="text-sm text-slate-400">Animals Rescued</p>
+      </div>
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+        <h4 class="text-2xl font-bold text-emerald-400">800+</h4>
+        <p class="text-sm text-slate-400">Adoptions</p>
+      </div>
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+        <h4 class="text-2xl font-bold text-emerald-400">50+</h4>
+        <p class="text-sm text-slate-400">Volunteers</p>
+      </div>
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+        <h4 class="text-2xl font-bold text-emerald-400">10+</h4>
+        <p class="text-sm text-slate-400">Years Experience</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+  <section class="bg-slate-900/40 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-20">
+      <h3 class="text-2xl font-bold text-center mb-14">What People Say</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+          <p class="text-sm text-slate-300">“Animal Haven helped me adopt my first dog. Professional and caring team.”</p>
+          <p class="mt-3 text-xs text-slate-500">— Rahul Sharma</p>
+        </div>
+        <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+          <p class="text-sm text-slate-300">“Their rescue work is truly inspiring. Highly trustworthy organization.”</p>
+          <p class="mt-3 text-xs text-slate-500">— Ananya Verma</p>
+        </div>
+        <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+          <p class="text-sm text-slate-300">“Transparent, ethical, and impactful. Proud to volunteer here.”</p>
+          <p class="mt-3 text-xs text-slate-500">— Daniel Ross</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="max-w-7xl mx-auto px-6 py-20 text-center">
+    <h3 class="text-3xl font-bold mb-4">Want to Make a Difference?</h3>
+    <p class="text-slate-300 max-w-2xl mx-auto mb-8">Join us as a volunteer, adopt a pet, or support our mission through donations.</p>
+    <div class="flex justify-center gap-4">
+      <button class="px-6 py-3 rounded-lg bg-emerald-500 text-slate-900 font-semibold">Become a Volunteer</button>
+      <button class="px-6 py-3 rounded-lg border border-slate-700 hover:border-emerald-500">Donate Now</button>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-900 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <h4 class="font-bold mb-2">Animal Haven</h4>
+        <p class="text-slate-400">Professional care for animals and wildlife.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Quick Links</h4>
+        <ul class="space-y-1 text-slate-400">
+          <li class="hover:text-emerald-400">Home</li>
+          <li class="hover:text-emerald-400">Adoption</li>
+          <li class="hover:text-emerald-400">Gallery</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Contact</h4>
+        <p class="text-slate-400">info@animalhaven.org</p>
+        <p class="text-slate-400">Global Organization</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Social</h4>
+        <div class="flex gap-3">
+          <button class="px-4 py-2 text-xs rounded bg-emerald-500 text-slate-900">Facebook</button>
+          <button class="px-4 py-2 text-xs rounded bg-pink-500 text-slate-900">Instagram</button>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-slate-500 py-4">© 2025 Animal Haven. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
